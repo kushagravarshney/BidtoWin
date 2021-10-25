@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Popup Login</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+  body {
+    font-family: 'Varela Round', sans-serif;
+    background-image: url('hammer.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+  }
+  .modal-login {
+    width: 620px;
+    margin: 30px auto;
+  }
+  .modal-login .modal-content {
+    border-radius: 1px;
+    border: none;
+  }
+  .modal-login .modal-header {
+        position: relative;
+    justify-content: center;
+        background: #f2f2f2;
+  }
+    .modal-login .modal-body {
+        padding: 30px;
+    }
+    .modal-login .modal-footer {
+        background: #f2f2f2;
+    }
+  .modal-login h4 {
+    text-align: center;
+    font-size: 26px;
+  }
+    .modal-login label {
+        font-weight: normal;
+        font-size: 13px;
+    }
+  .modal-login .form-control, .modal-login .btn {
+    min-height: 38px;
+    
+  }
+  .modal-login .hint-text {
+    text-align: center;
+  }
+  .modal-login .close {
+        position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+    .modal-login .checkbox-inline {
+        margin-top: 12px;
+    }
+    .modal-login input[type="checkbox"]{
+        margin-top: 2px;
+    }
+  .modal-login .btn {
+        min-width: 100px;
+    background: #3498db;
+    border: none;
+    line-height: normal;
+  }
+  .modal-login .btn:hover, .modal-login .btn:focus {
+    background: #248bd0;
+  }
+  .modal-login .hint-text a {
+    color: #999;
+  }
+  .trigger-btn {
+    display: inline-block;
+    margin: 80px auto;
+    color: red;
+  }
+</style>
+</head>
+<body>
+<div class="text-center">
+  <!-- Button HTML (to Trigger Modal) -->
+  <h1><a href="#myModal" class="trigger-btn" data-toggle="modal">Register</a></h1>
+</div>
+
+<!-- Modal HTML -->
+<div id="myModal" class="modal fade">
+  <div class="modal-dialog modal-login">
+    <div class="modal-content">
+      <form action="/examples/actions/confirmation.php" method="post">
+        <div class="modal-header">        
+          <h4 class="modal-title">Register</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        </div>
+        <div class="modal-body">        
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" placeholder="Enter full name" required="required">
+            <br><label>Date of Birth</label>
+            <input type="date" class="form-control" required="required">
+            <br><label>Gender</label><br>
+            <input type="radio" name="Gender" value="Male">Male<br>
+            <input type="radio" name="Gender" value="Female">Female<br>
+            <input type="radio" name="Gender" value="Other">Other<br><br>
+            <label>Email</label>
+            <input type="Email" class="form-control" required="required">
+            <br><label>Phone Number</label><br>
+            <select class="custom-select" style="max-width: 120px;">
+              <option selected="">+91</option>
+              <option value="1">+964</option>
+              <option value="2">+37</option>
+              <option value="3">+701</option>
+            </select>
+            <input type="phoneNumber" required="required">
+          </div>
+          <div class="form-group">
+            <div class="clearfix">
+              <label>Password</label>
+              <a href="#" class="pull-right text-muted"><small>Forgot Password?</small></a>
+            </div>
+            <input type="password" class="form-control" required="required">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <label class="checkbox-inline pull-left"><input type="checkbox"> Remember me</label>
+          <input type="submit" class="btn btn-primary pull-right" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>     
+</body>
+</html>    

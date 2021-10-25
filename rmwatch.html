@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>BIDTOWIN - Online Auction</title>
+  <link rel="shortcut icon" type="image/jpg" href="images/icon.ico"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+  <link href="css/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+
+
+    <header class="site-navbar py-4 site-navbar-target" role="banner">
+
+      <div class="container">
+        <div class="d-flex align-items-center">
+          <div class="site-logo">
+            <a href="index.html" class="d-block">
+              <img src="images/logo_footer.png" alt="Image" class="img-fluid">
+            </a>
+          </div>
+          <div class="mr-auto">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li class="active">
+                  <a href="index.html" class="nav-link text-left">Home</a>
+                </li>
+                <li>
+                  <a href="buy.html" class="nav-link text-left">Buy</a>
+                </li>
+                <li>
+                  <a href="buy.html" class="nav-link text-left">Sell</a>
+                </li>
+                
+                <li class="has-children">
+                  <a href="services.html" class="nav-link text-left">Services</a>
+                  <ul class="dropdown">
+                    <li><a href="services.html">Sell Items</a></li>
+                    <li><a href="services.html">Buy Items</a></li>
+                    <li><a href="services.html">Submit a Bid</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="about.html" class="nav-link text-left">About</a>
+                </li>
+                
+                <li>
+                  <a href="contact.html" class="nav-link text-left">Contact</a>
+                </li>
+              </ul>                                                                
+            </nav>
+
+          </div>
+        
+
+          </div>
+        </div>
+
+      </header>
+
+
+      <div class="intro-section" style="background-image: url('images/watchbg.jpg');">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-7 mx-auto text-center" data-aos="fade-up">
+              <h1>Richard Mille RM 50-04</h1>
+              <p>Manual winding tourbillon movement with hours, minutes, split-seconds chronograph<br>Limited edition of 30 pieces</p>
+              <p>
+                <a class="btn btn-danger">Bid Now</a>
+                <a class="btn btn-outline-danger text-white">Buy Now</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 order-lg-2">
+              <div class="side-box mb-4">
+                <p>
+                  Current Bid: <strong class="text-black">$<span id="currentbid"></span></strong> <br>
+                  Number of Bids: <strong class="text-black"><span id="nofbid"></span></strong>
+                </p>
+                <form action="#!">
+                  <div class="mb-4">
+                    <input type="text" class="form-control mb-2" placeholder="$0.00" id="pricebid">
+                    <p id="item1rm" ></p>
+                    <button class="btn btn-block" onclick="bid()" id="bidnow">Bid Now</button>
+                    <button class="btn btn-danger btn-block">Buy Now</button>
+                  </div>
+
+                  <p class="mb-0"><a href="#">Sign In</a> / <a href="#">Register</a></p>
+                </form>
+              </div>
+              <div class="side-box text-center">
+                <img src="images/kr.jpg" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
+                <h3 class="h5 text-black">Kimi Räikkönen</h3>
+                <span class="mb-3 d-block text-muted">Owner</span>
+                <p>Kimi-Matias Räikkönen, nicknamed "The Iceman", is a Finnish racing driver currently driving in Formula One for Alfa Romeo Racing, racing under the Finnish flag.Crowned world champion in 2007 after being vice world champion in 2003 and 2005, 39-year-old Kimi Räikkönen is a seasoned veteran. </p>
+              </div>
+            </div>
+            <div class="col-lg-8 pr-lg-5">
+              <div class="owl-carousel slide-one-item mb-5">
+                <img src="images/watch22.jpg" alt="Image" class="img-fluid mb-54">
+                <img src="images/watch66.jpg" alt="Image" class="img-fluid mb-54">
+                <img src="images/watch88.jpg" alt="Image" class="img-fluid mb-54">
+              </div>
+              <p>RM 50-04 TOURBILLON CHRONOGRAPH KIMI RÄIKKÖNEN<br>CALIBRE RM50-03<br>Manual winding tourbillon movement with hours, minutes, split-seconds chronograph, 30-minute totaliser, and power-reserve, torque and function indicators.</p>
+              <p>POWER RESERVE<br>Circa 70 hours (± 10%), without the chronograph running.Actual power reserve results will depend on the period of time the chronograph is utilised.</p>
+              <p>POWER-RESERVE INDICATOR<br>The power-reserve indicator shows the number of hours of energy left in the mainspring before the watch must be wound again.</p>
+              <p>CASE<br>The case of the RM 50-04 is water-resistant to 50 metres thanks to two Nitril O-ring seals. The case is assembled with 20 spline screws in grade 5 titanium and abrasion-resistant washers in 316L stainless steel.</p>
+
+              <h2 class="my-4">Bidders</h2>
+              <ul class="list-unstyled bidders">
+                <li class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center">
+                    <span class="mr-2">1.</span>
+                    <div class="d-flex align-items-center">
+                      <img src="images/kb.jpg" alt="Image" class="mr-2" id="bidderimage1">
+                      <span id="bidder1"></span>
+                    </div>
+                  </div>
+                  <span class="price">$<span id="bidprice1"></span></span>
+                </li>
+
+ 
+
+                <li class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center">
+                    <span class="mr-2">2.</span>
+                    <div class="d-flex align-items-center">
+                      <img src="images/mb.jpg" alt="Image" class="mr-2" id="bidderimage2">
+                      <span id="bidder2"></span>
+                    </div>
+                  </div>
+                  <span class="price">$<span id="bidprice2"></span></span>
+                </li>
+
+ 
+
+
+                <li class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center">
+                    <span class="mr-2">3.</span>
+                    <div class="d-flex align-items-center">
+                      <img src="images/gb.jpg" alt="Image" class="mr-2" id="bidderimage3">
+                      <span id="bidder3"></span>
+                    </div>
+                  </div>
+                  <span class="price">$<span id="bidprice3"></span></span>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3">
+              <p class="mb-4"><img src="images/logo_footer.png" alt="Image" class="img-fluid"></p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nemo minima qui dolor, iusto iure.</p>  
+              <p><a href="#">Learn More</a></p>
+            </div>
+            <div class="col-lg-3">
+              <h3 class="footer-heading"><span>Solutions</span></h3>
+              <ul class="list-unstyled">
+                <li><a href="#">Register</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Buy</a></li>
+                <li><a href="#">Sell</a></li>
+                <li><a href="#">Submit a bid</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3">
+              <h3 class="footer-heading"><span>Services</span></h3>
+              <ul class="list-unstyled">
+                <li><a href="#">Register</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Buy</a></li>
+                <li><a href="#">Sell</a></li>
+                <li><a href="#">Submit a bid</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3">
+              <h3 class="footer-heading"><span>Contact</span></h3>
+              <ul class="list-unstyled">
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Support Community</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Share Your Story</a></li>
+                <li><a href="#">Our Supporters</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <!-- .site-wrap -->
+
+
+    <!-- loader -->
+    <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#51be78"/></svg></div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="js/main.js"></script>
+     <script>
+        var countDownDate1 = new Date("Oct 28, 2020 23:31:35").getTime();
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        // Get today's date and time
+        var now = new Date().getTime();  
+        // Find the distance between now and the count down date
+        var distance1 = countDownDate1 - now;
+        // Time calculations for days, hours, minutes and seconds
+        var days1 = Math.floor(distance1 / (1000 * 60 * 60 * 24));
+        var hours1 = Math.floor((distance1 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes1 = Math.floor((distance1 % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds1 = Math.floor((distance1 % (1000 * 60)) / 1000);   
+        // Output the result in an element with id="demo"
+        document.getElementById("item1rm").innerHTML = days1 + "d " + hours1 + "h "+ minutes1 + "m " + seconds1 + "s "; 
+        //If the count down is over, write some text 
+        if (distance1 < 0) {
+          clearInterval(x);
+          document.getElementById("item1rm").innerHTML = "EXPIRED";
+          document.getElementById("bidnow").disabled = true;
+        }
+        }, 1000);
+      </script>
+
+      <script type="text/javascript">
+        var numbid = 11;
+        var curbid = 1599;
+
+        var bidder1 = "Kaleen Bhaiya";
+        var bidprice1 = 1599;
+        var bidderimage1 = "images/kb.jpg";
+
+        var bidder2 = "Munna Bhaiya";
+        var bidprice2 = 1399;
+        var bidderimage2 = "images/mb.jpg";
+
+        var bidder3 = "Guddu Bhaiya"
+        var bidprice3 = 1199;
+        var bidderimage3 = "images/gb.jpg";
+
+        document.getElementById("nofbid").innerHTML = numbid;
+        document.getElementById("currentbid").innerHTML = curbid;
+
+        document.getElementById("bidder1").innerHTML = bidder1;
+        document.getElementById("bidprice1").innerHTML = bidprice1;
+        document.getElementById("bidderimage1").src = bidderimage1;
+
+        document.getElementById("bidder2").innerHTML = bidder2;
+        document.getElementById("bidprice2").innerHTML = bidprice2;
+        document.getElementById("bidderimage2").src = bidderimage2;
+
+        document.getElementById("bidder3").innerHTML = bidder3;
+        document.getElementById("bidprice3").innerHTML = bidprice3;
+        document.getElementById("bidderimage3").src = bidderimage3;
+
+
+        function bid() {
+  
+            if(document.getElementById('pricebid').value <= curbid ){
+              alert("Bid should be greater than current bid");
+            }
+            else
+            { 
+              curbid = document.getElementById('pricebid').value;
+              document.getElementById("currentbid").innerHTML = curbid;
+              numbid=numbid+1;
+              document.getElementById("nofbid").innerHTML = numbid;   
+
+              document.getElementById("bidder1").innerHTML = "Sarthak";
+              document.getElementById("bidprice1").innerHTML = curbid;
+              document.getElementById("bidderimage1").src = "images/S.jpg";
+              document.getElementById("bidder2").innerHTML = bidder1;
+              document.getElementById("bidprice2").innerHTML = bidprice1;
+              document.getElementById("bidderimage2").src = bidderimage1;
+              document.getElementById("bidder3").innerHTML = bidder2;
+              document.getElementById("bidprice3").innerHTML = bidprice2;
+              document.getElementById("bidderimage3").src = bidderimage2;
+            }
+            document.getElementById('pricebid').value="";
+        }        
+      </script>
+
+</body>
+</html>
